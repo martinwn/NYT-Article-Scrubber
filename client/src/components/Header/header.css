@@ -1,0 +1,66 @@
+.spacing-div-header {
+  height: 15vh;
+}
+
+.header {
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.03);
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  border-bottom: solid 0.5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  cursor: default;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 3px;
+  letter-spacing: 0.07em;
+}
+
+.link {
+  margin-left: 40px;
+  padding-left: 0;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  transition: color ease-in-out 200ms, letter-spacing ease-in-out 200ms;
+}
+
+.link.active {
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.05em;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.1);
+}
+
+.link:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header h1 {
+    margin-bottom: 15px;
+  }
+  .link-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .link {
+    margin: 0 40px;
+  }
+}

@@ -1,0 +1,23 @@
+.article {
+  padding: 20px;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.1);
+}
+
+.article a {
+  color: rgba(0, 0, 0, 0.8);
+  transition: color ease-in-out 50ms;
+}
+
+.article a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.article span {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+#snippet {
+  font-size: 1.2rem;
+}

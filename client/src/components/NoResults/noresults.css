@@ -1,0 +1,9 @@
+.no-results {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.no-results h3 {
+  line-height: 100px;
+}
