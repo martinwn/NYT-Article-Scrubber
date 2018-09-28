@@ -2,7 +2,6 @@ const axios = require("axios");
 
 export default {
   searchForArticles: function(query) {
-    console.log(query);
     return axios.get("/api/search", {
       params: query
     });

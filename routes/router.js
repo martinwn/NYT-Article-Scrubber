@@ -6,7 +6,6 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 router.get("/search", (req, res) => {
-  console.log(req.query);
   axios
     .get(
       `http://api.nytimes.com/svc/search/v2/articlesearch.json?&api-key=${
